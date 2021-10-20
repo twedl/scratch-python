@@ -22,7 +22,7 @@ def day_one():
         for j in data:
             for k in data:
                 if i + j + k == 2020:
-                    print(f"Day 1.1: i: {i}, j: {j}, k: {k}, answer: {i * j * k}") 
+                    print(f"Day 1.2: i: {i}, j: {j}, k: {k}, answer: {i * j * k}") 
                     return
 
 def main():
