@@ -3,18 +3,30 @@
 
 def day_one():
     # read input for day one, calculate and print answer
-    with open('20201201.txt', 'r') as f:
+    with open('advent/20201201.txt', 'r') as f:
         data = f.read()
 
-    result = [int(i) for i in data.split()]
-    return result
+    data = [int(i) for i in data.split()]
 
+    for i in data:
+        for j in data:
+            if i + j == 2020:
+                print(f"Day 1.1: i: {i}, j: {j}, answer: {i * j}") 
+                break
+        else:
+            continue
 
-
+        break
+    
+    for i in data:
+        for j in data:
+            for k in data:
+                if i + j + k == 2020:
+                    print(f"Day 1.1: i: {i}, j: {j}, k: {k}, answer: {i * j * k}") 
+                    return
 
 def main():
-    result = day_one()
-    print(result)
+    day_one()
 
 if __name__ == "__main__":
     main()
